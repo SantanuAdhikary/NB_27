@@ -1,0 +1,14 @@
+
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#heading1{
+    color:red;
+    font-style: italic;
+}
+
+.con1 > p{
+    font-size: 20px;
+    font-weight: bold;
+}
