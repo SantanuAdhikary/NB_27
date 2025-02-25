@@ -1,0 +1,135 @@
+
+
+.con1{
+    background-color: antiquewhite;
+}
+
+.con2{
+    background-color: aquamarine;
+}
+
+
+/* ! 1. descendant selector */
+
+.con1 h1{
+    color:red
+}
+
+/* ! 2. direct child selector */
+
+
+.con2 > h1{
+    color:green
+}
+
+
+
+.section1 > #btn{
+
+    background-color: red;
+}
+
+                /* !  pseudoClass Selector */
+
+
+/* ! 1.  hover */
+
+
+.section1 > #btn:hover{
+    background-color: green;
+}
+
+.con4{
+    height: 200px;
+    width: 250px;
+    background-color: yellow;
+}
+
+.con4:hover{
+    background-color: blue;
+}
+
+
+.section1 > #btn2{
+    background-color: gray;
+}
+
+
+.section1 > #btn2:active{
+    background-color: pink;
+}
+
+
+/* !  nth-child */
+
+
+ul >li:nth-child(2n + 1)
+{
+    
+    background-color: pink;
+}
+
+
+
+
+   /* !  Pseudo Element Selector */
+
+
+   .con5 > p::first-letter{
+    color:blue;
+   }
+
+
+   .con5 > p::first-line{
+    background-color: pink;
+   }
+
+
+   .con5 > p::selection{
+    background-color: black;
+    color:white;
+   }
+
+
+   .con6{
+    background-color: gray;
+    height: 200px;
+    width: 500px;
+   }
+
+   .con6 > h1{
+    color:white;
+   }
+
+
+   .con6 > h1::after{
+    content: "!!";    
+   }
+
+
+   .con6 > h1::before{
+    content: "**" ;
+   }
+
+
+   .con6 > ol > li::marker{
+    color:red;
+   }
+
+
+   .con6 > ol >li:nth-child(2n)::marker
+   {
+    color:green
+   }
+
+
+
+   form > input[type="email"]{
+    background-color: red;
+   }
+
+
+   a[target="_self"]{
+
+    color:green;
+   }

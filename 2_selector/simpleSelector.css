@@ -1,0 +1,49 @@
+/* ! 1. TagName Selector */
+
+h1{
+    color:red;
+}
+
+/* ! 2. ID selector */
+
+#heading2{
+
+    color:green;
+
+}
+
+#section2{
+    background-color: yellow;
+}
+
+/* !  3. Class Selector */
+
+.container{
+    background-color: antiquewhite;
+}
+
+
+/* !  4. universal selector */
+
+
+*{
+    font-style: italic;
+    
+}
+
+
+
+
+
+.container2{
+    background-color: aqua;
+}
+
+
+/* !  group selector */
+
+
+#para1 , h3 , h4{
+  color:brown;
+  text-align: center;
+}
