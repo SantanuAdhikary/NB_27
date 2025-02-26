@@ -32,3 +32,23 @@
 .con1 > a{
     text-decoration: none;
 }
+
+
+.con2{
+
+ height: 300px;
+ width: 400px;
+ border: 2px solid rgb(165, 16, 224);
+
+ /* background-color: rgb(117, 84, 90); */
+
+ /* background-color: rgba(255, 0, 0,0.8); */
+
+ background-color: hsl(98, 38%, 51%);
+}
+
+.con2 > h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 4px rgba(0,0,0,0.5);
+}
