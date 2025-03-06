@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+
+.center > ul{
+    display: flex;
+    /* background-color: yellow; */
+}
+
+.center > ul > li{
+    list-style: none;
+    /* border: 2px solid green; */
+    margin-right:10px ;
+}
+
+span{
+    color:red;
+    
+}
+
+/* 
+.logo{
+    border: 2px solid red;
+}
+
+.center{
+    border: 2px solid red;
+}
+
+.right{
+    border: 2px solid red;
+} */
