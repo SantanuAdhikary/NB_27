@@ -19,9 +19,14 @@
     border: 3px solid black;
 
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
+
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
 }
 
 .container > .box{
@@ -52,3 +57,20 @@
    align-items: center;
 }
 
+
+.con4{
+    height: 400px;
+    width: 600px;
+    border: 3px solid red;
+    display: flex;
+}
+
+.con4 > .left{
+   flex-basis: 30%;
+   background-color: yellow;
+}
+
+.con4 >.right{
+    flex-basis: 70%;
+    background-color: red;
+}
