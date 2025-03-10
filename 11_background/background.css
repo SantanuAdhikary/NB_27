@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.outer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+}
+
+.outer > .inner{
+    height: 70%;
+    width: 65%;
+    border: 2px solid black;
+    background-color: white;
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwWnOmv6F43UgGkbZSO7FAncFAxXhJLUjfw&s");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
