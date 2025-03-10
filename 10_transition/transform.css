@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.outer > .inner{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transition: all 2s ease-in;
+}
+
+
+.outer > .inner:hover{
+    background-color: yellow;
+
+    transform: translateX(-300px);
+}
+
+.outer > .inner2{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    transition: all 2s ease-in;
+}
+
+.outer > .inner2:hover{
+
+   /* transform: translateY(-200px); */
+
+   /* transform: translate(-200px , 200px); */
+
+   /* transform: rotate(360deg); */
+
+   /* transform: scale(2); */
+
+   transform: skew(180deg);
+}
