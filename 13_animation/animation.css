@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer1{
+    height: 50vh;
+    background: linear-gradient(to right, red,yellow);
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+}
+
+
+
+.outer1 > .con1{
+    height: 250px;
+    width: 250px;
+    border: 3px solid white;
+}
+.outer1 > .con2{
+    height: 250px;
+    width: 250px;
+    border: 3px solid black;
+}
+
+.con1 > .box1{
+    height: 90px;
+    width: 90px;
+    background-color: green;
+    
+
+    animation: movingBox 2s ease-in alternate infinite
+}
+
+
+@keyframes movingBox {
+    
+    from{
+        
+    }
+    to{
+        background-color:black;
+        transform: translate(160px);
+        border-radius: 50%;
+    }
+}
+
+
+
+.con2 > .box2{
+    height: 80px;
+    width: 80px;
+    border: 3px solid white;
+
+    animation: boxRotate 2s linear infinite;
+}
+
+
+@keyframes boxRotate {
+    
+    from{
+        transform: rotate(0deg);
+        background-color: yellow;
+
+    }
+    to{
+        transform: rotate(360deg);
+        background-color: blue;
+    }
+}
+
+
+
+.con3{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con3 > .box3{
+    height: 90px;
+    width: 90px;
+    border-top: 3px solid green;
+    border-radius: 50%;
+
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.outer2{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background: linear-gradient(to right,red,yellow);
+    gap:50px;
+}
+
+.outer2 > .con4{
+    height: 250px;
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 50%;
+    animation: spinner 2s linear infinite;
+
+}
+
+.outer2 > .con4 > .box4{
+  height: 80px;
+  width: 80px;
+  border: 3px solid white;
+  border-radius: 50%;
+
+  
+}
+
+.con5{
+    height: 250px;
+    width: 250px;
+    /* background-color: black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.con5 > .circle{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+
+    animation: up_down 2s ease-in infinite alternate;
+}
+
+.con5 > #circle2{
+    animation-delay: 0.1s;
+    background-color: red;
+}
+.con5 > #circle3{
+    animation-delay: 0.2s;
+    background-color:green;
+}
+.con5 > #circle4{
+    animation-delay: 0.3s;
+    background-color:blue;
+}
+
+
+
+@keyframes up_down {
+    from{
+
+        transform: translateY(-30px);
+
+    }
+    to{
+        transform: translateY(30px);
+        box-shadow: 0px 4px 6px black;
+    }
+}

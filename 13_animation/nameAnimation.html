@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation for name</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .outer{
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer > .inner{
+            width: 650px;
+            height: 300px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            position: relative;
+            border-radius: 25px;
+        }
+
+        .outer > .inner >h1{
+            animation: up_down 2s ease-in infinite alternate;
+        }
+
+        #heading2{
+            animation-delay: 0.1s;
+        }
+        #heading3{
+            animation-delay: 0.2s;
+        }
+        #heading4{
+            animation-delay: 0.3s;
+        }
+        #heading5{
+            animation-delay: 0.4s;
+        }
+        @keyframes up_down {
+    from{
+
+        transform: translateY(-30px);
+
+    }
+    to{
+        transform: translateY(30px);
+       
+    }
+}
+
+  .inner > .img1{
+    height: 150px;
+    position: absolute;
+    top:-143px;
+  }
+  .inner > .img2{
+    height: 400px;
+    position: absolute;
+    left:-126px;
+    bottom:-100px;
+  }
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="inner">
+
+            <img src="./im.png" alt="" class="img1">
+            <img src="./im2.png" alt="" class="img2">
+
+            <h1 id="heading1">H</h1>
+            <h1 id="heading2">E</h1>
+            <h1 id="heading3">L</h1>
+            <h1 id="heading4">L</h1>
+            <h1 id="heading5">0</h1>
+        </div>
+    </div>
+</body>
+</html>
