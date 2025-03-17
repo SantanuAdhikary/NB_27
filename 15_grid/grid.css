@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 95vh;
+    background-color: antiquewhite;
+    border: 3px solid black;
+
+    display: grid;
+
+    grid-template-columns: 150px 200px 300px;
+
+    /* grid-template-columns: 2fr 2fr 1fr; */
+
+    /* grid-template-rows: 100px 120px 240px; */
+
+    grid-auto-rows: 100px;
+
+    justify-content: center;
+    align-content: center;
+    gap:10px;
+}
+
+.box{
+    padding: 10px;
+    border: 3px solid green;
+}
+
+#box1{
+    grid-column: span 3;
+}
+
+#box2{
+  grid-row: span 2;
+}
+
+#box3{
+    grid-column: span 2;
+    background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: top;
+    transition: all 2s ease-in;
+    background-size: cover;
+}
+
+#box3:hover{
+    background-position: center;
+}
+
+#box8{
+    grid-row: span 2;
+}
